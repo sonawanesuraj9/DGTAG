@@ -1,0 +1,6 @@
+framework module Pods_TouchBase {
+  umbrella header "Pods-TouchBase-umbrella.h"
+
+  export *
+  module * { export * }
+}

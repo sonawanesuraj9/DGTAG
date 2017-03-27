@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertVC" customModule="TouchBase" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ioX-tb-WPT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4E-ig-AGF">
+                            <rect key="frame" x="10" y="246" width="300" height="30"/>
+                            <state key="normal" title="Edit Post">
+                                <color key="titleColor" red="0.043137254899999998" green="0.078431372550000003" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnEditPostClick:" destination="-1" eventType="touchUpInside" id="FD7-GR-lK0"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggz-FD-33w">
+                            <rect key="frame" x="8" y="284" width="304" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="8Ec-J2-ciI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXA-uL-2dm">
+                            <rect key="frame" x="10" y="293" width="300" height="30"/>
+                            <state key="normal" title="Delete Post">
+                                <color key="titleColor" red="0.043137254899999998" green="0.078431372550000003" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnDeletepostClick:" destination="-1" eventType="touchUpInside" id="7JN-EJ-jwd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ggz-FD-33w" firstAttribute="centerY" secondItem="ioX-tb-WPT" secondAttribute="centerY" id="Pj5-u2-r1n"/>
+                        <constraint firstItem="ZXA-uL-2dm" firstAttribute="top" secondItem="Ggz-FD-33w" secondAttribute="bottom" constant="8" id="ZpK-Ck-1gX"/>
+                        <constraint firstItem="ZXA-uL-2dm" firstAttribute="leading" secondItem="d4E-ig-AGF" secondAttribute="leading" id="boy-b2-Yf7"/>
+                        <constraint firstAttribute="trailing" secondItem="d4E-ig-AGF" secondAttribute="trailing" constant="10" id="cqG-OX-O6R"/>
+                        <constraint firstItem="ZXA-uL-2dm" firstAttribute="trailing" secondItem="d4E-ig-AGF" secondAttribute="trailing" id="cty-zL-bb7"/>
+                        <constraint firstItem="d4E-ig-AGF" firstAttribute="leading" secondItem="ioX-tb-WPT" secondAttribute="leading" constant="10" id="fms-kz-IaQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Ggz-FD-33w" secondAttribute="trailing" constant="8" id="hRP-ue-3md"/>
+                        <constraint firstItem="Ggz-FD-33w" firstAttribute="leading" secondItem="ioX-tb-WPT" secondAttribute="leading" constant="8" id="wp8-Pp-vqk"/>
+                        <constraint firstItem="Ggz-FD-33w" firstAttribute="top" secondItem="d4E-ig-AGF" secondAttribute="bottom" constant="8" id="yQ5-WU-5TA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ioX-tb-WPT" secondAttribute="trailing" id="M0w-5L-xC6"/>
+                <constraint firstItem="ioX-tb-WPT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dDP-BX-JlH"/>
+                <constraint firstAttribute="bottom" secondItem="ioX-tb-WPT" secondAttribute="bottom" id="pol-6D-KIy"/>
+                <constraint firstItem="ioX-tb-WPT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uj0-lF-Qay"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

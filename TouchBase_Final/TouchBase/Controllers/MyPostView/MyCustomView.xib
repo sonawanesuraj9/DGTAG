@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Swz721l.ttf">
+            <string>Swiss721BT-Light</string>
+            <string>Swiss721BT-Light</string>
+            <string>Swiss721BT-Light</string>
+            <string>Swiss721BT-Light</string>
+            <string>Swiss721BT-Light</string>
+            <string>Swiss721BT-Light</string>
+            <string>Swiss721BT-Light</string>
+        </mutableArray>
+        <mutableArray key="swisse.ttf">
+            <string>Swiss721BT-RomanExtended</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCustomView" customModule="TouchBase" customModuleProvider="target">
+            <connections>
+                <outlet property="btnComment" destination="IvA-mb-zPG" id="YvR-6P-8FQ"/>
+                <outlet property="btnMoreOption" destination="7AJ-Sw-mz5" id="U6O-lO-clV"/>
+                <outlet property="imageBottomConstraint" destination="aHd-qD-cQm" id="quL-GM-PGP"/>
+                <outlet property="imgVideoIcon" destination="kZL-gA-VHs" id="3AU-B0-ruB"/>
+                <outlet property="lblCommentName" destination="BEL-5c-H0q" id="e3x-pn-A5k"/>
+                <outlet property="lblContent" destination="Ixe-MA-YCg" id="f7W-47-S8K"/>
+                <outlet property="lblLikeName" destination="9j8-uY-xT5" id="eK9-cJ-3kR"/>
+                <outlet property="lblPostDate" destination="WHh-Mi-WK6" id="CoB-pW-Gl4"/>
+                <outlet property="myButton" destination="TyW-pF-857" id="ukU-hh-7H2"/>
+                <outlet property="myImage" destination="rFq-Sd-1Qt" id="DA1-Pk-HZS"/>
+                <outlet property="postCaptionHeight" destination="uZn-0R-jW0" id="1N8-b1-Vbo"/>
+                <outlet property="titleLabel" destination="PGr-tW-rT9" id="MUI-bm-LbA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="503"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixe-MA-YCg" userLabel="Content">
+                    <rect key="frame" x="8" y="8" width="405" height="424"/>
+                    <fontDescription key="fontDescription" name="Swiss721BT-Light" family="Swis721 Lt BT" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rFq-Sd-1Qt">
+                    <rect key="frame" x="8" y="34" width="405" height="405"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rFq-Sd-1Qt" secondAttribute="height" multiplier="1:1" id="27X-ZH-Zgc"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="kZL-gA-VHs">
+                    <rect key="frame" x="180" y="207" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="64W-bu-YVp"/>
+                        <constraint firstAttribute="height" constant="60" id="pvT-bY-jfi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGr-tW-rT9">
+                    <rect key="frame" x="8" y="8" width="405" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="uZn-0R-jW0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Swiss721BT-Light" family="Swis721 Lt BT" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvK-ht-Uuq">
+                    <rect key="frame" x="8" y="440" width="405" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-10-10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHh-Mi-WK6">
+                            <rect key="frame" x="0.0" y="5" width="63" height="21"/>
+                            <fontDescription key="fontDescription" name="Swiss721BT-RomanExtended" family="Swis721 Ex BT" pointSize="10"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-selected_i5" translatesAutoresizingMaskIntoConstraints="NO" id="uuO-pK-f2Z">
+                            <rect key="frame" x="0.0" y="7" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="7aQ-ig-v6H"/>
+                                <constraint firstAttribute="height" constant="16" id="fqA-7T-ONu"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jody Breaux and 15 Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9j8-uY-xT5">
+                            <rect key="frame" x="20" y="5" width="227" height="21"/>
+                            <fontDescription key="fontDescription" name="Swiss721BT-Light" family="Swis721 Lt BT" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_comment_i5" translatesAutoresizingMaskIntoConstraints="NO" id="Kmt-Qg-4Ke">
+                            <rect key="frame" x="259" y="7" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="VO4-nJ-N7y"/>
+                                <constraint firstAttribute="width" constant="16" id="g11-97-TEY"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="37 Others" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEL-5c-H0q">
+                            <rect key="frame" x="283" y="5" width="114" height="21"/>
+                            <fontDescription key="fontDescription" name="Swiss721BT-Light" family="Swis721 Lt BT" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="BEL-5c-H0q" secondAttribute="trailing" constant="8" id="2Hp-jM-kmr"/>
+                        <constraint firstItem="uuO-pK-f2Z" firstAttribute="leading" secondItem="dvK-ht-Uuq" secondAttribute="leading" id="2gO-I3-iqH"/>
+                        <constraint firstItem="BEL-5c-H0q" firstAttribute="leading" secondItem="Kmt-Qg-4Ke" secondAttribute="trailing" constant="8" id="2qm-iF-6Nz"/>
+                        <constraint firstItem="BEL-5c-H0q" firstAttribute="height" secondItem="9j8-uY-xT5" secondAttribute="height" id="9NS-F5-Adq"/>
+                        <constraint firstItem="9j8-uY-xT5" firstAttribute="top" secondItem="dvK-ht-Uuq" secondAttribute="top" constant="5" id="9UH-DT-NXd"/>
+                        <constraint firstItem="9j8-uY-xT5" firstAttribute="leading" secondItem="uuO-pK-f2Z" secondAttribute="trailing" constant="4" id="A5y-OB-47R"/>
+                        <constraint firstAttribute="height" constant="30" id="CUL-Nk-6ZB"/>
+                        <constraint firstAttribute="bottom" secondItem="9j8-uY-xT5" secondAttribute="bottom" constant="4" id="CqA-G9-kNv"/>
+                        <constraint firstItem="uuO-pK-f2Z" firstAttribute="centerY" secondItem="dvK-ht-Uuq" secondAttribute="centerY" id="E5s-bb-6DO"/>
+                        <constraint firstItem="WHh-Mi-WK6" firstAttribute="top" secondItem="dvK-ht-Uuq" secondAttribute="top" constant="5" id="Jik-8R-tHW"/>
+                        <constraint firstItem="BEL-5c-H0q" firstAttribute="width" secondItem="9j8-uY-xT5" secondAttribute="width" multiplier="0.5" id="RMx-VA-dkl"/>
+                        <constraint firstItem="WHh-Mi-WK6" firstAttribute="leading" secondItem="dvK-ht-Uuq" secondAttribute="leading" id="Zup-dX-yrM"/>
+                        <constraint firstItem="Kmt-Qg-4Ke" firstAttribute="centerY" secondItem="dvK-ht-Uuq" secondAttribute="centerY" id="cCK-XZ-hLJ"/>
+                        <constraint firstItem="Kmt-Qg-4Ke" firstAttribute="leading" secondItem="9j8-uY-xT5" secondAttribute="trailing" constant="12" id="hUg-vf-rQW"/>
+                        <constraint firstAttribute="bottom" secondItem="BEL-5c-H0q" secondAttribute="bottom" constant="4" id="qNM-MO-M4L"/>
+                        <constraint firstItem="BEL-5c-H0q" firstAttribute="top" secondItem="dvK-ht-Uuq" secondAttribute="top" constant="5" id="rF6-yh-w7G"/>
+                        <constraint firstAttribute="bottom" secondItem="WHh-Mi-WK6" secondAttribute="bottom" constant="4" id="uCz-J4-p94"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAP-kJ-hoe">
+                    <rect key="frame" x="0.0" y="471" width="421" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyW-pF-857">
+                            <rect key="frame" x="0.0" y="0.0" width="168" height="30"/>
+                            <fontDescription key="fontDescription" name="Swiss721BT-Light" family="Swis721 Lt BT" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Like" image="star-selected_i5">
+                                <color key="titleColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvA-mb-zPG">
+                            <rect key="frame" x="168" y="0.0" width="169" height="30"/>
+                            <fontDescription key="fontDescription" name="Swiss721BT-Light" family="Swis721 Lt BT" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Comment" image="btn_comment_i5">
+                                <color key="titleColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AJ-Sw-mz5">
+                            <rect key="frame" x="337" y="0.0" width="84" height="30"/>
+                            <fontDescription key="fontDescription" name="Swiss721BT-Light" family="Swis721 Lt BT" pointSize="15"/>
+                            <state key="normal" image="drop_icon">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="7AJ-Sw-mz5" firstAttribute="leading" secondItem="IvA-mb-zPG" secondAttribute="trailing" id="1Tg-YM-8RU"/>
+                        <constraint firstAttribute="trailing" secondItem="7AJ-Sw-mz5" secondAttribute="trailing" id="568-zW-sOZ"/>
+                        <constraint firstItem="IvA-mb-zPG" firstAttribute="height" secondItem="TyW-pF-857" secondAttribute="height" id="93F-Df-67K"/>
+                        <constraint firstAttribute="bottom" secondItem="7AJ-Sw-mz5" secondAttribute="bottom" id="CHr-s5-IQM"/>
+                        <constraint firstItem="IvA-mb-zPG" firstAttribute="width" secondItem="TyW-pF-857" secondAttribute="width" id="FaK-Te-GJm"/>
+                        <constraint firstItem="7AJ-Sw-mz5" firstAttribute="width" secondItem="TyW-pF-857" secondAttribute="width" multiplier="0.5" id="I8C-Wf-NFK"/>
+                        <constraint firstAttribute="bottom" secondItem="IvA-mb-zPG" secondAttribute="bottom" id="ITc-3d-Wi2"/>
+                        <constraint firstItem="TyW-pF-857" firstAttribute="top" secondItem="SAP-kJ-hoe" secondAttribute="top" id="NTk-1k-pFC"/>
+                        <constraint firstItem="7AJ-Sw-mz5" firstAttribute="top" secondItem="SAP-kJ-hoe" secondAttribute="top" id="NYJ-wO-0EE"/>
+                        <constraint firstAttribute="height" constant="30" id="YB8-Gk-DTV"/>
+                        <constraint firstItem="7AJ-Sw-mz5" firstAttribute="height" secondItem="TyW-pF-857" secondAttribute="height" id="hi3-0z-Aaf"/>
+                        <constraint firstAttribute="bottom" secondItem="TyW-pF-857" secondAttribute="bottom" id="iHw-YN-qHJ"/>
+                        <constraint firstItem="TyW-pF-857" firstAttribute="leading" secondItem="SAP-kJ-hoe" secondAttribute="leading" id="k5Y-Oj-9fi"/>
+                        <constraint firstItem="IvA-mb-zPG" firstAttribute="top" secondItem="SAP-kJ-hoe" secondAttribute="top" id="sZe-6y-SKO"/>
+                        <constraint firstItem="IvA-mb-zPG" firstAttribute="leading" secondItem="TyW-pF-857" secondAttribute="trailing" id="wya-pj-090"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dvK-ht-Uuq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="2wf-R3-m3e"/>
+                <constraint firstItem="rFq-Sd-1Qt" firstAttribute="top" secondItem="PGr-tW-rT9" secondAttribute="bottom" constant="8" id="9Tj-bk-sNM"/>
+                <constraint firstItem="kZL-gA-VHs" firstAttribute="centerX" secondItem="rFq-Sd-1Qt" secondAttribute="centerX" id="Hny-wf-oFz"/>
+                <constraint firstItem="Ixe-MA-YCg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="J16-el-3lk"/>
+                <constraint firstAttribute="trailing" secondItem="Ixe-MA-YCg" secondAttribute="trailing" constant="8" id="JNj-oy-yBr"/>
+                <constraint firstItem="Ixe-MA-YCg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Kyt-fJ-Xgr"/>
+                <constraint firstItem="SAP-kJ-hoe" firstAttribute="top" secondItem="dvK-ht-Uuq" secondAttribute="bottom" constant="1" id="S2L-Yr-oVZ"/>
+                <constraint firstItem="PGr-tW-rT9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Vhz-Ut-Ilw"/>
+                <constraint firstAttribute="bottom" secondItem="SAP-kJ-hoe" secondAttribute="bottom" constant="2" id="Vvl-TC-o37"/>
+                <constraint firstAttribute="trailing" secondItem="PGr-tW-rT9" secondAttribute="trailing" constant="8" id="WKV-0V-qzE"/>
+                <constraint firstAttribute="trailing" secondItem="rFq-Sd-1Qt" secondAttribute="trailing" constant="8" id="Zum-KA-7Rt"/>
+                <constraint firstItem="dvK-ht-Uuq" firstAttribute="top" secondItem="rFq-Sd-1Qt" secondAttribute="bottom" constant="1" id="aHd-qD-cQm"/>
+                <constraint firstItem="PGr-tW-rT9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="beh-Bn-WH4"/>
+                <constraint firstItem="kZL-gA-VHs" firstAttribute="centerY" secondItem="rFq-Sd-1Qt" secondAttribute="centerY" id="eHo-KP-QLj"/>
+                <constraint firstItem="SAP-kJ-hoe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="f3o-by-InN"/>
+                <constraint firstAttribute="trailing" secondItem="dvK-ht-Uuq" secondAttribute="trailing" constant="8" id="gnY-u1-ljd"/>
+                <constraint firstItem="dvK-ht-Uuq" firstAttribute="top" secondItem="Ixe-MA-YCg" secondAttribute="bottom" constant="8" id="iRb-n3-fxF"/>
+                <constraint firstAttribute="trailing" secondItem="SAP-kJ-hoe" secondAttribute="trailing" id="n1q-m5-eet"/>
+                <constraint firstItem="rFq-Sd-1Qt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="pJb-yw-9iC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="263.5" y="315.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_comment_i5" width="24" height="20"/>
+        <image name="drop_icon" width="14" height="9"/>
+        <image name="star-selected_i5" width="18" height="18"/>
+        <image name="video_Icon.png" width="56" height="56"/>
+    </resources>
+</document>
